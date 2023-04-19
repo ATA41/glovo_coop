@@ -1,7 +1,12 @@
 from django.shortcuts import render
 
-from .models import Order
 
+from django.http import HttpResponse
+
+from .models import *
+
+def index(request):
+    return HttpResponse("index")
 
 def orders(request):
     orders_all = Order.objects.all()

@@ -1,5 +1,6 @@
 from django.contrib import admin
 
-,Order
 
+from .models import Courier, Order
+admin.site.register(Courier)
 admin.site.register(Order)
