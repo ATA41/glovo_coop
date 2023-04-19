@@ -1,0 +1,10 @@
+git add shell.py
+git reset shell.py
+git add .
+git commit -m "shell.py"
+git revert HEAD --no-edit
+git reset ba655ff81f8e3dfc04a48f423b6af6f5bcfd261d
+git tag version_beta
+git log --pretty=oneline
+glovo_coop>git reset ba655ff81f8e3dfc04a48f423b6af6f5bcfd261d
+git tag -d version_beta
