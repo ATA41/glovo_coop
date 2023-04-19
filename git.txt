@@ -1,0 +1,36 @@
+git remote add origin https://github.com/ATA41/glovo_coop.git 
+git pull origin master 
+git checkout -b rus_branch
+git push origin rus_branch 
+git add .
+git status   
+git pull origin rus_branch 
+git branch
+git status
+git commit -m "added gitignore, admin, models, views"
+
+git push origin rus_branch
+
+git commit -m "pushing of master branch has been completed"
+
+git push
+
+git log --pretty=oneline
+
+git status
+git add shell.py 
+git restore shell.py
+git commit -m "shell file has been discarded"
+
+git log --pretty=oneline
+git revert HEAD --no-edit
+
+git log --pretty=oneline
+git commit -m "reverted to last changes "
+
+git tag version_beta
+git log --pretty=oneline
+git reset ba655f    
+git log --pretty=oneline --all 
+
+git tag -d version_beta  
