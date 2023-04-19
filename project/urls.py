@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from . import views
+
+from glovo import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('couriers/', views.couriers, name='couriers'),
+    path('index/', views.index, name='index'),
     path('orders/', views.orders, name='orders'),
 ]
